@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeCar.com</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .r{
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+        }
+        .r img{
+            width: 100%;
+        }
+        .contador{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="r"><img src="images/skull-153861_640.png" alt=""></div>
+    <div class="contador" title="juan" id="contador"></div>
+</body>
+<script>
+    const c=document.getElementById("contador");
+    document.addEventListener("keypress",(e)=>{
+        if(e.key==2){
+            c.style.display="block";
+        }
+    })
+    // setTimeout(() => {
+    //    alert("alerta, salga ahora de este sitio") 
+    // }, 1000);
+</script>
+</html>
