@@ -12,7 +12,7 @@
             box-sizing: border-box;
         }
         body{
-            /* background-color: black; */
+            background-color: black;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -25,7 +25,7 @@
         .r img{
             width: 100%;
         }
-        .contador{
+        .info{
             display: none;
         }
         .m{
@@ -43,7 +43,7 @@
 
 <p class="m">Es werden auch darüberhinaus keine persönlichen oder personenbezogenen Daten vom Besucherzähler erhoben. Eine Nachverfolgung oder Zuordnung der Zugriffe ist zu keiner Zeit möglich. Ein besonderer Dank geht an <a href="https://www.putzfrau-agentur.de">www.putzfrau-agentur.de</a>, durch dessen Unterstützung dieser kostenlose Service erst möglich gemacht wird.</p>
     
-<div class="info">
+<div class="info" id="contador">
     <p>visitas ayer</p>
     <span class="BZgestern"></span>
     <p>visitas hoy</p>
@@ -52,7 +52,6 @@
     <span class="BZgesamt"></span>
 </div>
 <div class="r"><img src="images/skull-153861_640.png" alt=""></div>
-    <div class="contador" title="juan" id="contador"></div>
 </body>
 <script>
     const c=document.getElementById("contador");
